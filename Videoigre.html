@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Početna</title>
+    <link rel="stylesheet" href="styleFilmovi.css">
+    <script defer src=".\KvizVideoigre.js"></script>
+    </head>
+    <body>
+        <div class="container">
+                
+            <header>
+                <div class="topnav">
+                    <a href="#home" onclick="location.href='./home.html'">Početna</a>
+                    <a onclick="location.href='./Filmovi.html'" style="width:auto;">Filmovi kviz</a>
+                    <a class="active" href="#quiz">Video igre kviz</a>
+                    <a href="#about" onclick="location.href='./about.html'">Sport kviz</a>
+                    <p id="vrijeme"></p>
+                </div> 
+            </header>
+            <section>
+                <div id="results"></div>
+                <form name="quizForm" onsubmit="return submitAnswers()">
+                    <h3>1. Koliko igara ima u serijalu GTA ?</h3>
+                    <input class="ans" type="radio" name="q1" value="a" id="q1a">8</input>
+                    <input class="ans" type="radio" name="q1" value="b" id="q1b">5</input>
+                    <input class="ans" type="radio" name="q1" value="c" id="q1c">4</input>
+                    <input class="ans" type="radio" name="q1" value="d" id="q1d">7</input>
+                    <h3>2. Koje je godine izdan prvi Super Mario Bros?</h3>
+                    <input class="ans" type="radio" name="q2" value="a" id="q2a">1987</input>
+                    <input class="ans" type="radio" name="q2" value="b" id="q2b">1985</input>
+                    <input class="ans" type="radio" name="q2" value="c" id="q2c">1990</input>
+                    <input class="ans" type="radio" name="q2" value="d" id="q2d">1984</input>
+
+                    <h3>3. Koja igra je poznata po popularnom Battle Royale modu?</h3>
+                    <input class="ans" type="radio" name="q3" value="a" id="q3a"> PUBG
+                    <input class="ans" type="radio" name="q3" value="b" id="q3b"> Fortnite
+                    <input class="ans" type="radio" name="q3" value="c" id="q3c"> Apex Legends
+
+                    <h3>4. Koji je naziv glavnog lika u igri "God of War"?</h3>
+                    <input class="ans" type="radio" name="q4" value="a" id="q4a"> Kratos
+                    <input class="ans" type="radio" name="q4" value="b" id="q4b"> Vatreus
+                    <input class="ans" type="radio" name="q4" value="c" id="q4c"> Thor
+                    <input class="ans" type="radio" name="q4" value="d" id="q4d"> Zeus
+
+                    <h3>5. Koja je najprodavanija igra svih vremena??</h3>
+                    <input class="ans" type="radio" name="q5" value="a" id="q5a"> GTA V
+                    <input class="ans" type="radio" name="q5" value="b" id="q5b"> Minecraft
+                    <input class="ans" type="radio" name="q5" value="c" id="q5c"> Super Mario Bros
+                    <input class="ans" type="radio" name="q5" value="d" id="q5d"> Call of Duty: Modern Warfare
+
+                    <h3>6. Koja je najstarija video igra?</h3>
+                    <input class="ans" type="radio" name="q6" value="a" id="q6a"> Pac-Man
+                    <input class="ans" type="radio" name="q6" value="b" id="q6b"> Spacewar
+                    <input class="ans" type="radio" name="q6" value="c" id="q6c"> Super Mario Bros
+
+                    <h3>7. Koja je najprodavanija Sony konzola!</h3>
+                    <input class="ans" type="radio" name="q7" value="a" id="q7a"> PlayStation 3
+                    <input class="ans" type="radio" name="q7" value="b" id="q7b"> PlayStation 5
+                    <input class="ans" type="radio" name="q7" value="c" id="q7c"> PlayStation 4
+                    <input class="ans" type="radio" name="q7" value="d" id="q7d"> PlayStation 2
+
+                    <h3>8. Kako se zove glavni lik u igri Minecraft?</h3>
+                    <input class="ans" type="radio" name="q8" value="a" id="q8a"> Steve
+                    <input class="ans" type="radio" name="q8" value="b" id="q8b"> Alex
+                    <input class="ans" type="radio" name="q8" value="c" id="q8c"> Herobirine
+                    <input class="ans" type="radio" name="q8" value="d" id="q8d"> Max
+                    <br>
+                    Unesite ime i prezime: <input class="uns" type="text" name="imeIprezime" id="imeIprezime">
+                    <br><br>
+                    <button class="submit" type="submit" value="submitAnswers">Submit Answers</button>
+                </form>
+            </section>
+    </body>
+</html>

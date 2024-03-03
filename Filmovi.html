@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Početna</title>
+    <link rel="stylesheet" href="styleFilmovi.css">
+    <script defer src=".\KvizFilmovi.js"></script>
+    </head>
+    <body>
+        <div class="container">
+                
+            <header>
+                <div class="topnav">
+                    <a href="#home" onclick="location.href='./home.html'">Početna</a>
+                    <a class="active" href="#Filmovi" style="width:auto;">Filmovi kviz</a>
+                    <a href="#quiz" onclick="location.href='./Videoigre.html'">Video igre kviz</a>
+                    <a href="#about" onclick="location.href='./about.html'">Sport kviz</a>
+                    <p id="vrijeme"></p>
+                </div> 
+            </header>
+            <section>
+                <div id="results"></div>
+                <form name="quizForm" onsubmit="return submitAnswers()">
+                    <h3>1. U kojem gradu se odvija radnja filma Spider Man?</h3>
+                    <input class="ans" type="radio" name="q1" value="a" id="q1a">Boston</input>
+                    <input class="ans" type="radio" name="q1" value="b" id="q1b">New York</input>
+                    <input class="ans" type="radio" name="q1" value="c" id="q1c">Los Angeles</input>
+                    <h3>2. Tko nije Marvel superjunak?</h3>
+                    <input class="ans" type="radio" name="q2" value="a" id="q2a">Spider-Man</input>
+                    <input class="ans" type="radio" name="q2" value="b" id="q2b">Iron man</input>
+                    <input class="ans" type="radio" name="q2" value="c" id="q2c">Hulk</input>
+                    <input class="ans" type="radio" name="q2" value="d" id="q2d">Batman</input>
+
+                    <h3>3. Tko je glavni glumac u serijalu Nemoguća misija?</h3>
+                    <input class="ans" type="radio" name="q3" value="a" id="q3a"> Tom Cruse
+                    <input class="ans" type="radio" name="q3" value="b" id="q3b"> Vin Diesel
+                    <input class="ans" type="radio" name="q3" value="c" id="q3c"> Leonardo Di Caprio
+
+                    <h3>4. U filmu Ford vs Ferrari kako se naziva završna utrka?</h3>
+                    <input class="ans" type="radio" name="q4" value="a" id="q4a"> 24 sata Le Mansa
+                    <input class="ans" type="radio" name="q4" value="b" id="q4b"> Velika Nagrada Monaka 
+                    <input class="ans" type="radio" name="q4" value="c" id="q4c"> 24 sata Nurburginga
+                    <input class="ans" type="radio" name="q4" value="d" id="q4d"> Dakar
+
+                    <h3>5. Kako se zove protivnik, a kasnije veliki prijatelj Rockya u serijalu filmova Rocky?</h3>
+                    <input class="ans" type="radio" name="q5" value="a" id="q5a"> Apollo Creed
+                    <input class="ans" type="radio" name="q5" value="b" id="q5b"> Ivan Drago
+                    <input class="ans" type="radio" name="q5" value="c" id="q5c"> Tommy Gunn
+
+                    <h3>6. Super Sonic je?</h3>
+                    <input class="ans" type="radio" name="q6" value="a" id="q6a"> Lav
+                    <input class="ans" type="radio" name="q6" value="b" id="q6b"> Zec
+                    <input class="ans" type="radio" name="q6" value="c" id="q6c"> Jež
+                    <input class="ans" type="radio" name="q6" value="d" id="q6d"> Klokan
+
+                    <h3>7. Izbaci uljeza!</h3>
+                    <input class="ans" type="radio" name="q7" value="a" id="q7a"> Kung Fu Panda
+                    <input class="ans" type="radio" name="q7" value="b" id="q7b"> Shazam
+                    <input class="ans" type="radio" name="q7" value="c" id="q7c"> Sam u kući
+                    <input class="ans" type="radio" name="q7" value="d" id="q7d"> Spider Man
+
+                    <h3>8. Jeste li zadovoljni kvizom?</h3>
+                    <input class="ans" type="radio" name="q8" value="a" id="q8a"> a. Da<br>
+                    <br>
+                    <input class="ans" type="radio" name="q8" value="b" id="q8b"> b. Ne<br>
+                    <br><br>
+                    Unesite ime i prezime: <input class="uns" type="text" name="imeIprezime" id="imeIprezime">
+                    <br><br>
+                    <button class="submit" type="submit" value="submitAnswers">Submit Answers</button>
+                </form>
+            </section>
+    </body>
+</html>
